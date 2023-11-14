@@ -1,0 +1,40 @@
+@use "./breakpoints" as *;
+@use "./variables" as *;
+
+@mixin section-padding {
+  padding: $nav-height 1rem;
+  @include xs {
+    padding: $nav-height 1.3rem;
+  }
+  @include sm {
+    padding: $nav-height 1.5rem;
+  }
+  @include md {
+    padding: $nav-height 2rem;
+  }
+  @include lg {
+    padding: $nav-height 100px;
+  }
+  @include xlg {
+    padding: $nav-height 150px;
+  }
+}
+
+@mixin nav-padding {
+  padding: 0 1rem;
+  @include xs {
+    padding: 0 1.3rem;
+  }
+  @include sm {
+    padding: 0 1.5rem;
+  }
+  @include md {
+    padding: 0 2rem;
+  }
+  @include lg {
+    padding: 0 100px;
+  }
+  @include xlg {
+    padding: 0 150px;
+  }
+}

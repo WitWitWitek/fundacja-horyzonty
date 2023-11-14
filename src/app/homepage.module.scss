@@ -1,0 +1,63 @@
+@use "styles" as *;
+
+.homepage {
+  background-image: url("/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  @include section-padding;
+  padding-top: $nav-height;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  gap: 5rem;
+  h1 {
+    font-size: 4rem;
+    color: $white;
+  }
+  h2 {
+    font-size: 2rem;
+    color: $primary-gold;
+  }
+
+  &__img {
+    width: min(100%, 350px);
+  }
+}
+
+@include sm {
+  .homepage {
+    h1 {
+      font-size: 6rem;
+      color: $white;
+    }
+    h2 {
+      font-size: 3rem;
+      color: $primary-gold;
+    }
+
+    &__img {
+      width: min(100%, 450px);
+    }
+  }
+}
+
+@include md {
+  .homepage {
+    background-image: url("/hero-background.png");
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+
+    &__img {
+      width: min(400px, 600px);
+    }
+  }
+}
