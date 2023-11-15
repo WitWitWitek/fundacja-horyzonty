@@ -1,14 +1,35 @@
+"use client";
 import styles from "./AboutUs.module.scss";
+import { motion, Variants } from "framer-motion";
+
+const imageVariants: Variants = {
+  offscreen: {
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
 
 export default function AboutUs() {
   return (
-    <section className={styles["about-us"]} id="about-us">
+    <motion.section
+      className={styles["about-us"]}
+      id="about-us"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.5 }}
+    >
       <div className={styles["about-us__circle"]} />
       <div className={styles["about-us__wrapper"]}>
-        <img
+        <motion.img
           src="/cicero.png"
           alt="Ilustracja popiersia Cycerona"
           className={styles["about-us__img"]}
+          variants={imageVariants}
         />
         <div className={styles["about-us__wrapper-title"]}>
           <h2>Vivere est cogitare!</h2>
@@ -27,6 +48,6 @@ export default function AboutUs() {
           innowacyjnych rozwiązań i inspirujących dyskusji.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }
