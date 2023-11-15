@@ -1,6 +1,6 @@
-@use "styles" as *;
+@use "../../styles" as *;
 
-.homepage {
+.homeview {
   background-image: url("/hero-background.png");
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@
 }
 
 @include sm {
-  .homepage {
+  .homeview {
     h1 {
       font-size: 3.5rem;
       color: $white;
@@ -44,7 +44,7 @@
 }
 
 @include md {
-  .homepage {
+  .homeview {
     background-image: url("/hero-background.png");
     grid-template-columns: repeat(2, 1fr);
     align-items: center;

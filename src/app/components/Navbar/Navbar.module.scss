@@ -10,6 +10,7 @@
   width: 100%;
   height: $nav-height;
   @include nav-padding;
+  z-index: 2;
 
   &__list {
     display: none;
@@ -79,7 +80,7 @@
 @include xs {
   .navbar {
     &__menu {
-      width: 70%;
+      width: 75%;
     }
   }
 }

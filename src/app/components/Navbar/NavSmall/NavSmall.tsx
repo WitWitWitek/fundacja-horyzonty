@@ -1,13 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import { Fade } from "hamburger-react";
-import Link from "next/link";
 import styles from "../Navbar.module.scss";
 import Navlink from "../../ui/Navlink";
 
-export default function NavSmall() {
-  const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
+type Props = {
+  isMenuOpen: boolean;
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
+export default function NavSmall({ isMenuOpen, setMenuOpen }: Props) {
   return (
     <>
       <button
@@ -28,10 +30,19 @@ export default function NavSmall() {
           isMenuOpen ? styles["navbar__menu-active"] : ""
         }`}
       >
-        <Navlink title="Założyciele" />
-        <Navlink title="Projekty" />
-        <Navlink title="Dla mediów" />
-        <Navlink title="Kontakt" />
+        <Navlink title="O nas" target="about-us" setMenuOpen={setMenuOpen} />
+        <Navlink
+          title="Założyciele"
+          target="about-us"
+          setMenuOpen={setMenuOpen}
+        />
+        <Navlink title="Projekty" target="about-us" setMenuOpen={setMenuOpen} />
+        <Navlink
+          title="Dla mediów"
+          target="about-us"
+          setMenuOpen={setMenuOpen}
+        />
+        <Navlink title="Kontakt" target="about-us" setMenuOpen={setMenuOpen} />
       </div>
     </>
   );
