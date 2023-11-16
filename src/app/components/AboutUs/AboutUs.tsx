@@ -2,7 +2,7 @@
 import { useVisible } from "@/app/hooks/useVisible";
 import styles from "./AboutUs.module.scss";
 import { motion, Variants } from "framer-motion";
-import { navColorVersion } from "@/app/page";
+import { navColorVersion } from "@/app/types";
 
 const imageVariants: Variants = {
   offscreen: {

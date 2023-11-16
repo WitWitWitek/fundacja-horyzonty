@@ -1,5 +1,5 @@
 import { useEffect, useRef, Ref } from "react";
-import { navColorVersion } from "../page";
+import { navColorVersion } from "../types";
 
 const options: IntersectionObserverInit = {
   root: null,

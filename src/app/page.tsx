@@ -1,10 +1,6 @@
 import AboutUs from "./components/AboutUs/AboutUs";
 import Homeview from "./components/Homeview/Homeview";
-
-export enum navColorVersion {
-  blue = "blue",
-  white = "white",
-}
+import { navColorVersion } from "./types";
 
 export default function Home() {
   return (
