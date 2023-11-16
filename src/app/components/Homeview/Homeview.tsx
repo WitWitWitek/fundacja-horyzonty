@@ -1,8 +1,8 @@
 "use client";
-import { navColorVersion } from "@/app/page";
 import styles from "./Homeview.module.scss";
 import { motion, Variants } from "framer-motion";
 import { useVisible } from "@/app/hooks/useVisible";
+import { navColorVersion } from "@/app/types";
 
 const mainViewVariants: Variants = {
   hidden: { opacity: 0, translateX: -20 },
