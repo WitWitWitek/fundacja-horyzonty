@@ -2,4 +2,5 @@
 
 .navlink {
   @include navbar-btn;
+  color: inherit;
 }

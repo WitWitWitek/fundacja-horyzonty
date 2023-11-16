@@ -1,6 +1,8 @@
 "use client";
+import { useVisible } from "@/app/hooks/useVisible";
 import styles from "./AboutUs.module.scss";
 import { motion, Variants } from "framer-motion";
+import { navColorVersion } from "@/app/page";
 
 const imageVariants: Variants = {
   offscreen: {
@@ -14,7 +16,13 @@ const imageVariants: Variants = {
   },
 };
 
-export default function AboutUs() {
+export default function AboutUs({
+  navColorVersion,
+}: {
+  navColorVersion: navColorVersion;
+}) {
+  const { elementRef } = useVisible();
+
   return (
     <motion.section
       className={styles["about-us"]}
@@ -22,6 +30,8 @@ export default function AboutUs() {
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.5 }}
+      data-navtype={navColorVersion}
+      ref={elementRef}
     >
       <div className={styles["about-us__circle"]} />
       <div className={styles["about-us__wrapper"]}>

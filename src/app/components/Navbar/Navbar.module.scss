@@ -11,6 +11,7 @@
   height: $nav-height;
   @include nav-padding;
   z-index: 2;
+  color: $primary-blue;
 
   &__list {
     display: none;

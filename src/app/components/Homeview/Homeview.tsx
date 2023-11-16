@@ -1,6 +1,8 @@
 "use client";
+import { navColorVersion } from "@/app/page";
 import styles from "./Homeview.module.scss";
 import { motion, Variants } from "framer-motion";
+import { useVisible } from "@/app/hooks/useVisible";
 
 const mainViewVariants: Variants = {
   hidden: { opacity: 0, translateX: -20 },
@@ -19,13 +21,21 @@ const imgVariants: Variants = {
   },
 };
 
-export default function Homeview() {
+export default function Homeview({
+  navColorVersion,
+}: {
+  navColorVersion: navColorVersion;
+}) {
+  const { elementRef } = useVisible();
+
   return (
     <main className={styles.homeview}>
       <motion.div
         variants={mainViewVariants}
         initial="hidden"
         animate="visible"
+        data-navtype={navColorVersion}
+        ref={elementRef}
       >
         <motion.h1>Fundacja Horyzonty</motion.h1>
         <motion.h2>Vivere est cogitare</motion.h2>

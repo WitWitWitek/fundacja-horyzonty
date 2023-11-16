@@ -4,10 +4,6 @@
 @mixin navbar-btn {
   cursor: pointer;
   position: relative;
-  color: $primary-blue;
-  @include sm {
-    color: $white;
-  }
   text-decoration: none;
   margin-right: 0.75rem;
   background-color: transparent;
