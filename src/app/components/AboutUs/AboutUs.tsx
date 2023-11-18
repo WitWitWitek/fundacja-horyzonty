@@ -26,12 +26,12 @@ export default function AboutUs({
   return (
     <motion.section
       className={styles["about-us"]}
-      id="about-us"
+      id="o-nas"
       initial="offscreen"
+      ref={elementRef}
+      data-navtype={navColorVersion}
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.5 }}
-      data-navtype={navColorVersion}
-      ref={elementRef}
     >
       <div className={styles["about-us__circle"]} />
       <div className={styles["about-us__wrapper"]}>
@@ -40,6 +40,7 @@ export default function AboutUs({
           alt="Ilustracja popiersia Cycerona"
           className={styles["about-us__img"]}
           variants={imageVariants}
+          loading="lazy"
         />
         <div className={styles["about-us__wrapper-title"]}>
           <h2>Vivere est cogitare!</h2>

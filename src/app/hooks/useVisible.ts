@@ -16,7 +16,6 @@ export function useVisible() {
       const observer = new IntersectionObserver((entries) => {
         const entry = entries[0];
         if (entry.isIntersecting) {
-          console.log(entry);
           const navbar = document.getElementById("nav-list");
           const navType = (
             elementRef.current as unknown as HTMLElement
