@@ -7,8 +7,8 @@ export default function NavLarge() {
       <Navlink title="O nas" target="o-nas" />
       <Navlink title="Projekty" target="projekty" />
       <Navlink title="Założyciele" target="założyciele" />
-      <Navlink title="Dla mediów" target="o-nas" />
-      <Navlink title="Kontakt" target="o-nas" />
+      <Navlink title="Dla mediów" target="dla-mediow" />
+      <Navlink title="Kontakt" target="kontakt" />
     </div>
   );
 }

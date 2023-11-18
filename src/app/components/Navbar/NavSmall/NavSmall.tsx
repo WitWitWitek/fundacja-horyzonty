@@ -37,8 +37,12 @@ export default function NavSmall({ isMenuOpen, setMenuOpen }: Props) {
           target="założyciele"
           setMenuOpen={setMenuOpen}
         />
-        <Navlink title="Dla mediów" target="o-nas" setMenuOpen={setMenuOpen} />
-        <Navlink title="Kontakt" target="o-nas" setMenuOpen={setMenuOpen} />
+        <Navlink
+          title="Dla mediów"
+          target="dla-mediow"
+          setMenuOpen={setMenuOpen}
+        />
+        <Navlink title="Kontakt" target="kontakt" setMenuOpen={setMenuOpen} />
       </div>
     </>
   );
