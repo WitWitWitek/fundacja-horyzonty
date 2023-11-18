@@ -31,7 +31,7 @@ export default function Projects({
         różnorodnych dziedzin życia społecznego.
       </p>
       <div className={styles["projects__list"]}>
-        <h2 className={styles["projects__list-heading"]}>
+        <h2 className={styles["projects__list-title"]}>
           Obszary działalności:
         </h2>
         <div className={styles["projects__list-container"]}>

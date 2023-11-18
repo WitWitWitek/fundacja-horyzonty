@@ -6,7 +6,7 @@ export default function NavLarge() {
     <div className={styles["navbar__list"]} id="nav-list">
       <Navlink title="O nas" target="o-nas" />
       <Navlink title="Projekty" target="projekty" />
-      <Navlink title="Założyciele" target="o-nas" />
+      <Navlink title="Założyciele" target="założyciele" />
       <Navlink title="Dla mediów" target="o-nas" />
       <Navlink title="Kontakt" target="o-nas" />
     </div>
