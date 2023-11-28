@@ -1,7 +1,7 @@
 @use "../../styles" as *;
 
 .contact {
-  background-image: url("/hero-background.png");
+  background-image: $white;
   background-size: cover;
   background-position: center;
   @include section-padding;

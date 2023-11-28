@@ -11,12 +11,12 @@ export default function Projects({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  const { elementRef } = useVisible();
+  // const { elementRef } = useVisible();
   return (
     <motion.section
       className={styles.projects}
       id="projekty"
-      ref={elementRef}
+      // ref={elementRef}
       data-navtype={navColorVersion}
     >
       <img

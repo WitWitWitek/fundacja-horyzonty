@@ -26,7 +26,7 @@ export default function Homeview({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  const { elementRef } = useVisible();
+  // const { elementRef } = useVisible();
 
   return (
     <main className={styles.homeview}>
@@ -35,7 +35,7 @@ export default function Homeview({
         initial="hidden"
         animate="visible"
         data-navtype={navColorVersion}
-        ref={elementRef}
+        // ref={elementRef}
       >
         <motion.h1>Fundacja Horyzonty</motion.h1>
         <motion.h2>Vivere est cogitare</motion.h2>

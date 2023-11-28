@@ -1,14 +1,16 @@
 @use "../../styles/" as *;
 
 .media {
-  background-color: $white;
+  background-image: url("/hero-background.png");
+  background-position: center;
+  background-size: cover;
   @include section-padding;
   padding-top: $nav-height;
   width: 100%;
   position: relative;
   z-index: 0;
   overflow-x: hidden;
-  color: $primary-blue;
+  color: $white;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;

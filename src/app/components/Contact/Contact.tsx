@@ -10,13 +10,13 @@ export default function Contact({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  const { elementRef } = useVisible();
+  // const { elementRef } = useVisible();
 
   return (
     <motion.section
       className={styles["contact"]}
       id="kontakt"
-      ref={elementRef}
+      // ref={elementRef}
       data-navtype={navColorVersion}
     >
       <h2>Kontakt:</h2>

@@ -11,11 +11,11 @@ export default function FounderTwo({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  const { elementRef } = useVisible();
+  // const { elementRef } = useVisible();
   return (
     <motion.section
       className={`${styles.founders} ${styles["founders__blue"]}`}
-      ref={elementRef}
+      // ref={elementRef}
       data-navtype={navColorVersion}
     >
       <h2 className={styles["founders__title"]}>Waldemar Tevnell</h2>

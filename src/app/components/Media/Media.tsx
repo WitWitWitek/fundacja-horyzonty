@@ -10,13 +10,13 @@ export default function Media({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  const { elementRef } = useVisible();
+  // const { elementRef } = useVisible();
 
   return (
     <motion.section
       className={styles["media"]}
       id="dla-mediow"
-      ref={elementRef}
+      // ref={elementRef}
       data-navtype={navColorVersion}
     >
       <p className={styles["media__description"]}>

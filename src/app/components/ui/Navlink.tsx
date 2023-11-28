@@ -10,7 +10,7 @@ export default function Navlink({ title, target, setMenuOpen }: Props) {
   return (
     <a
       className={styles.navlink}
-      href={`/#${target}`}
+      href={`/${target}`}
       onClick={() => (setMenuOpen ? setMenuOpen(false) : null)}
     >
       {title}

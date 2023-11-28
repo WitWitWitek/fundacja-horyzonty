@@ -21,14 +21,14 @@ export default function AboutUs({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  const { elementRef } = useVisible();
+  // const { elementRef } = useVisible();
 
   return (
     <motion.section
       className={styles["about-us"]}
       id="o-nas"
       initial="offscreen"
-      ref={elementRef}
+      // ref={elementRef}
       data-navtype={navColorVersion}
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.5 }}

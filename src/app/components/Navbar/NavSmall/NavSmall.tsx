@@ -30,11 +30,15 @@ export default function NavSmall({ isMenuOpen, setMenuOpen }: Props) {
           isMenuOpen ? styles["navbar__menu-active"] : ""
         }`}
       >
-        <Navlink title="O nas" target="o-nas" setMenuOpen={setMenuOpen} />
-        <Navlink title="Projekty" target="projekty" setMenuOpen={setMenuOpen} />
+        <Navlink title="O nas" target="#o-nas" setMenuOpen={setMenuOpen} />
+        <Navlink
+          title="Projekty"
+          target="#projekty"
+          setMenuOpen={setMenuOpen}
+        />
         <Navlink
           title="Założyciele"
-          target="założyciele"
+          target="#założyciele"
           setMenuOpen={setMenuOpen}
         />
         <Navlink
@@ -42,7 +46,11 @@ export default function NavSmall({ isMenuOpen, setMenuOpen }: Props) {
           target="dla-mediow"
           setMenuOpen={setMenuOpen}
         />
-        <Navlink title="Kontakt" target="kontakt" setMenuOpen={setMenuOpen} />
+        <Navlink
+          title="Kontakt"
+          target="dla-mediow/#kontakt"
+          setMenuOpen={setMenuOpen}
+        />
       </div>
     </>
   );
