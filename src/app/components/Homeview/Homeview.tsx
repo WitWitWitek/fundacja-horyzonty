@@ -5,19 +5,10 @@ import { useVisible } from "@/app/hooks/useVisible";
 import { navColorVersion } from "@/app/types";
 
 const mainViewVariants: Variants = {
-  hidden: { opacity: 0, translateX: -20 },
+  hidden: { opacity: 0, translateX: -40 },
   visible: {
     opacity: 1,
     translateX: 0,
-  },
-};
-
-const imgVariants: Variants = {
-  hidden: { opacity: 0, translateX: 20, scale: 0.8 },
-  visible: {
-    opacity: 1,
-    translateX: 0,
-    scale: 1,
   },
 };
 
@@ -26,30 +17,26 @@ export default function Homeview({
 }: {
   navColorVersion: navColorVersion;
 }) {
-  // const { elementRef } = useVisible();
-
   return (
     <main className={styles.homeview}>
+      <div className={styles["homeview__trapezoid"]}></div>
       <motion.div
-        variants={mainViewVariants}
-        initial="hidden"
-        animate="visible"
         data-navtype={navColorVersion}
-        // ref={elementRef}
+        className={styles["homeview__container"]}
       >
-        <motion.h1>Fundacja Horyzonty</motion.h1>
-        <motion.h2>Vivere est cogitare</motion.h2>
-      </motion.div>
-      <div>
-        <motion.img
-          src="/horyzonty-large.png"
-          alt="Logo Fundacji Horyzonty"
-          className={styles["homeview__img"]}
-          variants={imgVariants}
+        <motion.div
+          variants={mainViewVariants}
           initial="hidden"
           animate="visible"
-        />
-      </div>
+          className={styles["homeview__trapezoid-container"]}
+        >
+          <motion.h1>Fundacja Horyzonty</motion.h1>
+          <motion.h2>Vivere est cogitare</motion.h2>
+          <motion.a href="#o-nas" className={styles["homeview__cta-btn"]}>
+            Zajrzyj na nasza stronę
+          </motion.a>
+        </motion.div>
+      </motion.div>
     </main>
   );
 }

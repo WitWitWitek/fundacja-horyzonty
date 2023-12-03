@@ -32,3 +32,24 @@
     height: 100%;
   }
 }
+
+@mixin primary-btn {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  background-color: $primary-gold;
+  border-radius: 10px;
+  border: 2px solid $primary-gold;
+  color: $white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $white;
+    color: $primary-gold;
+  }
+}
