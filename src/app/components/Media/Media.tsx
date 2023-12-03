@@ -19,6 +19,7 @@ export default function Media({
       // ref={elementRef}
       data-navtype={navColorVersion}
     >
+      <h2 className={styles["media__title"]}>Dla mediów</h2>
       <p className={styles["media__description"]}>
         W tej sekcji znajdziecie Państwo odnośniki do mediów, które zostały
         udostępnione w celu pobrania. Dzięki tym linkom istnieje możliwość
