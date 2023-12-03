@@ -1,7 +1,7 @@
 @use "../../styles" as *;
 
 .contact {
-  background-image: $white;
+  background-color: $white;
   background-size: cover;
   background-position: center;
   @include section-padding;
