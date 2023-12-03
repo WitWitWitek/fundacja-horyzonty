@@ -19,23 +19,19 @@ export default function Homeview({
 }) {
   return (
     <main className={styles.homeview}>
-      <div className={styles["homeview__trapezoid"]}></div>
+      <div className={styles["homeview__trapezoid"]} />
       <motion.div
         data-navtype={navColorVersion}
+        variants={mainViewVariants}
+        initial="hidden"
+        animate="visible"
         className={styles["homeview__container"]}
       >
-        <motion.div
-          variants={mainViewVariants}
-          initial="hidden"
-          animate="visible"
-          className={styles["homeview__trapezoid-container"]}
-        >
-          <motion.h1>Fundacja Horyzonty</motion.h1>
-          <motion.h2>Vivere est cogitare</motion.h2>
-          <motion.a href="#o-nas" className={styles["homeview__cta-btn"]}>
-            Zajrzyj na nasza stronę
-          </motion.a>
-        </motion.div>
+        <motion.h1>Fundacja Horyzonty</motion.h1>
+        <motion.h2>Vivere est cogitare</motion.h2>
+        <motion.a href="#o-nas" className={styles["homeview__cta-btn"]}>
+          Zajrzyj na nasza stronę
+        </motion.a>
       </motion.div>
     </main>
   );

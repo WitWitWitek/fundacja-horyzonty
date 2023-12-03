@@ -19,11 +19,11 @@ export default function FounderTwo({
       data-navtype={navColorVersion}
     >
       <h2 className={styles["founders__title"]}>Waldemar Tevnell</h2>
-      <div className={styles["founders__img-container"]}>
+      <div className={styles["founders__person-container"]}>
         <img
           src="/waldemar-tevnell.jpg"
           alt="Zdjęcie Waldemara Tevnella"
-          className={styles["founders__img"]}
+          className={styles["founders__person-img"]}
         />
       </div>
       <div className={styles["founders__description"]}>

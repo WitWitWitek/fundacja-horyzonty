@@ -35,7 +35,7 @@
     z-index: 0;
   }
 
-  &__img {
+  &__person {
     &-container {
       display: block;
       position: relative;
@@ -43,24 +43,27 @@
       justify-content: center;
       align-items: center;
       z-index: 1;
+      width: 80%;
       &::before {
         content: "";
         position: absolute;
         width: 3rem;
         height: 3rem;
-        left: 10%;
-        bottom: -10%;
-        transform: translate(-50%, -50%);
+        left: 0%;
+        bottom: 0%;
+        transform: translate(-25%, 25%);
         background-color: $primary-gold;
         border-radius: 10px;
         z-index: 2;
       }
     }
-    display: block;
-    border-radius: 10px;
-    width: 80%;
-    z-index: 1;
-    box-shadow: 1rem -1rem 0px $primary-gold;
+    &-img {
+      display: block;
+      border-radius: 10px;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 1rem -1rem 0px $primary-gold;
+    }
   }
 
   &__title {
@@ -118,11 +121,15 @@
 }
 
 @include md {
+  $gap: 1.5rem;
+
   .founders {
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
+    justify-items: center;
+    gap: $gap;
 
     &__circle {
       position: absolute;
@@ -135,36 +142,39 @@
       z-index: 0;
     }
 
-    &__img {
+    &__person {
       &-container {
         display: block;
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         z-index: 1;
+        max-width: 70%;
+        align-self: flex-start;
         &::before {
           content: "";
           position: absolute;
           width: 3rem;
           height: 3rem;
-          left: 11.5%;
-          bottom: -7.5%;
-          transform: translate(-50%, -50%);
           background-color: $primary-gold;
           border-radius: 10px;
           z-index: 2;
         }
       }
-      display: block;
-      border-radius: 10px;
-      width: 80%;
-      z-index: 1;
-      box-shadow: 1rem -1rem 0px $primary-gold;
+      &-img {
+        margin-top: $gap;
+        display: block;
+        border-radius: 10px;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 1rem -1rem 0px $primary-gold;
+      }
     }
 
     &__description {
       grid-column: 2 / 3;
+      align-self: flex-start;
     }
 
     &__title {

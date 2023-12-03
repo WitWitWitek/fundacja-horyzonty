@@ -21,11 +21,11 @@ export default function FounderOne({
     >
       <div className={styles["founders__circle"]} />
       <h2 className={styles["founders__title"]}>Wojciech Wróblewski</h2>
-      <div className={styles["founders__img-container"]}>
+      <div className={styles["founders__person-container"]}>
         <img
           src="/wojciech-wroblewski.jpg"
           alt="Zdjęcie Wojciecha Wróblewskiego"
-          className={styles["founders__img"]}
+          className={styles["founders__person-img"]}
         />
       </div>
       <div className={styles["founders__description"]}>

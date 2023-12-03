@@ -19,17 +19,6 @@ export default function Projects({
       // ref={elementRef}
       data-navtype={navColorVersion}
     >
-      <img
-        className={styles["projects__img"]}
-        src="/projects-cover-photo.jpg"
-        alt="Ilustracja przedstawiająca zaangażowanie społeczne"
-        loading="lazy"
-      />
-      <p className={styles["projects__description"]}>
-        Nasza fundacja posiada szerokie cele statutowe, które odzwierciedlają
-        nasze zaangażowanie w rozwój społeczności lokalnych oraz wspieranie
-        różnorodnych dziedzin życia społecznego.
-      </p>
       <div className={styles["projects__list"]}>
         <h2 className={styles["projects__list-title"]}>
           Obszary działalności:
@@ -55,6 +44,22 @@ export default function Projects({
           />
         </div>
       </div>
+      <div className={styles["projects__container"]}>
+        <img
+          className={styles["projects__img"]}
+          src="/projects-cover-photo.jpg"
+          alt="Ilustracja przedstawiająca zaangażowanie społeczne"
+          loading="lazy"
+        />
+      </div>
+      <p className={styles["projects__description"]}>
+        Nasza fundacja posiada szerokie cele statutowe, które odzwierciedlają
+        nasze zaangażowanie w rozwój społeczności lokalnych oraz wspieranie
+        różnorodnych dziedzin życia społecznego. Nasza fundacja posiada szerokie
+        cele statutowe, które odzwierciedlają nasze zaangażowanie w rozwój
+        społeczności lokalnych oraz wspieranie różnorodnych dziedzin życia
+        społecznego.
+      </p>
     </motion.section>
   );
 }

@@ -2,21 +2,21 @@
 @use "./variables" as *;
 
 @mixin section-padding {
-  padding: calc($nav-height + 10px) 1rem;
+  padding: calc($nav-height + 20px) 1rem;
   @include xs {
-    padding: calc($nav-height + 10px) 1.3rem;
+    padding: calc($nav-height + 20px) 1.3rem;
   }
   @include sm {
-    padding: calc($nav-height + 10px) 1.5rem;
+    padding: calc($nav-height + 20px) 1.5rem;
   }
   @include md {
-    padding: calc($nav-height + 10px) 2rem;
+    padding: calc($nav-height + 20px) 2rem;
   }
   @include lg {
-    padding: calc($nav-height + 10px) 100px;
+    padding: calc($nav-height + 20px) 100px;
   }
   @include xlg {
-    padding: calc($nav-height + 10px) 150px;
+    padding: calc($nav-height + 20px) 150px;
   }
 }
 
