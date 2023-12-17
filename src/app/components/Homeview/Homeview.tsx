@@ -24,7 +24,7 @@ export default function Homeview() {
         <motion.h1>Fundacja Horyzonty</motion.h1>
         <motion.h2>Vivere est cogitare</motion.h2>
         <motion.a href="#o-nas" className={styles["homeview__cta-btn"]}>
-          Zajrzyj na nasza stronę
+          Poznaj nasza misję
         </motion.a>
       </motion.div>
     </main>

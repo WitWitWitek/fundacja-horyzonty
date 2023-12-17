@@ -41,12 +41,11 @@ export default function Projects() {
         />
       </div>
       <p className={styles["projects__description"]}>
-        Nasza fundacja posiada szerokie cele statutowe, które odzwierciedlają
-        nasze zaangażowanie w rozwój społeczności lokalnych oraz wspieranie
-        różnorodnych dziedzin życia społecznego. Nasza fundacja posiada szerokie
-        cele statutowe, które odzwierciedlają nasze zaangażowanie w rozwój
-        społeczności lokalnych oraz wspieranie różnorodnych dziedzin życia
-        społecznego.
+        Horyzont naszych działań to rozwój społeczeństwa obywatelskiego,
+        wspólnot lokalnych oraz wspieranie merytorycznej debaty i wymiany
+        poglądów. Tylko świadomie pracując nad kształtem debaty w naszej
+        wspólnocie jesteśmy w stanie rozwinąć myśl, która jest podstawą naszych
+        czynów.
       </p>
     </motion.section>
   );
