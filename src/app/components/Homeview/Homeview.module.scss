@@ -11,13 +11,12 @@
   width: 100%;
   text-align: center;
   display: grid;
-  justify-items: center;
+  align-items: end;
   gap: 3rem;
   z-index: 0;
 
   &__container {
     padding: 1rem;
-    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +28,7 @@
 
   h1 {
     font-size: 2.3rem;
-    color: $white;
+    color: $primary-blue;
     background-color: rbga(black, 0.7);
   }
   h2 {
@@ -44,6 +43,20 @@
 
   &__img {
     width: min(100%, 350px);
+  }
+
+  &__trapezoid {
+    background: linear-gradient(rgba($white, 0.3) 0%, $white 100%);
+    clip-path: polygon(0 40%, 100% 60%, 100% 100%, 0% 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
   }
 }
 

@@ -27,7 +27,7 @@ export default function AboutUs() {
       <div className={styles["about-us__circle"]} />
       <div className={styles["about-us__wrapper"]}>
         <motion.img
-          src="/cicero.png"
+          src="/cicero.webp"
           alt="Ilustracja popiersia Cycerona"
           className={styles["about-us__img"]}
           variants={imageVariants}
