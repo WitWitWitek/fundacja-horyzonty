@@ -1,8 +1,7 @@
 "use client";
+
 import styles from "./Homeview.module.scss";
 import { motion, Variants } from "framer-motion";
-import { useVisible } from "@/app/hooks/useVisible";
-import { navColorVersion } from "@/app/types";
 
 const mainViewVariants: Variants = {
   hidden: { opacity: 0, translateX: -40 },
@@ -12,16 +11,11 @@ const mainViewVariants: Variants = {
   },
 };
 
-export default function Homeview({
-  navColorVersion,
-}: {
-  navColorVersion: navColorVersion;
-}) {
+export default function Homeview() {
   return (
     <main className={styles.homeview}>
       <div className={styles["homeview__trapezoid"]} />
       <motion.div
-        data-navtype={navColorVersion}
         variants={mainViewVariants}
         initial="hidden"
         animate="visible"

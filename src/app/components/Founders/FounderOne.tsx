@@ -1,23 +1,15 @@
 "use client";
-import { useVisible } from "@/app/hooks/useVisible";
-import { navColorVersion } from "@/app/types";
+
 import { motion } from "framer-motion";
 import styles from "./Founder.module.scss";
 import Link from "next/link";
 import { FaWikipediaW } from "react-icons/fa6";
 
-export default function FounderOne({
-  navColorVersion,
-}: {
-  navColorVersion: navColorVersion;
-}) {
-  // const { elementRef } = useVisible();
+export default function FounderOne() {
   return (
     <motion.section
       className={`${styles.founders} ${styles["founders__white"]}`}
       id="założyciele"
-      // ref={elementRef}
-      data-navtype={navColorVersion}
     >
       <div className={styles["founders__circle"]} />
       <h2 className={styles["founders__title"]}>Wojciech Wróblewski</h2>

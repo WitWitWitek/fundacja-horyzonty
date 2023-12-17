@@ -1,24 +1,12 @@
 "use client";
-import { useVisible } from "@/app/hooks/useVisible";
-import { navColorVersion } from "@/app/types";
 import { motion } from "framer-motion";
 import styles from "./Projects.module.scss";
 import { FaChartLine, FaRegHandshake, FaGraduationCap } from "react-icons/fa6";
 import ProjectTile from "../ui/ProjectTile";
 
-export default function Projects({
-  navColorVersion,
-}: {
-  navColorVersion: navColorVersion;
-}) {
-  // const { elementRef } = useVisible();
+export default function Projects() {
   return (
-    <motion.section
-      className={styles.projects}
-      id="projekty"
-      // ref={elementRef}
-      data-navtype={navColorVersion}
-    >
+    <motion.section className={styles.projects} id="projekty">
       <div className={styles["projects__list"]}>
         <h2 className={styles["projects__list-title"]}>
           Obszary działalności:

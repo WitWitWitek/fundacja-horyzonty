@@ -1,22 +1,14 @@
 "use client";
-import { useVisible } from "@/app/hooks/useVisible";
-import { navColorVersion } from "@/app/types";
+
 import { motion } from "framer-motion";
 import styles from "./Founder.module.scss";
 import Link from "next/link";
 import { FaWikipediaW } from "react-icons/fa6";
 
-export default function FounderTwo({
-  navColorVersion,
-}: {
-  navColorVersion: navColorVersion;
-}) {
-  // const { elementRef } = useVisible();
+export default function FounderTwo() {
   return (
     <motion.section
       className={`${styles.founders} ${styles["founders__blue"]}`}
-      // ref={elementRef}
-      data-navtype={navColorVersion}
     >
       <h2 className={styles["founders__title"]}>Waldemar Tevnell</h2>
       <div className={styles["founders__person-container"]}>

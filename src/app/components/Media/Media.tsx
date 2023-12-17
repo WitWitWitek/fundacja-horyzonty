@@ -1,24 +1,11 @@
 "use client";
-import { useVisible } from "@/app/hooks/useVisible";
 import styles from "./Media.module.scss";
 import { motion } from "framer-motion";
-import { navColorVersion } from "@/app/types";
 import { FaDownload } from "react-icons/fa6";
 
-export default function Media({
-  navColorVersion,
-}: {
-  navColorVersion: navColorVersion;
-}) {
-  // const { elementRef } = useVisible();
-
+export default function Media() {
   return (
-    <motion.section
-      className={styles["media"]}
-      id="dla-mediow"
-      // ref={elementRef}
-      data-navtype={navColorVersion}
-    >
+    <motion.section className={styles["media"]} id="dla-mediow">
       <h2 className={styles["media__title"]}>Dla mediów</h2>
       <p className={styles["media__description"]}>
         W tej sekcji znajdziecie Państwo odnośniki do mediów, które zostały

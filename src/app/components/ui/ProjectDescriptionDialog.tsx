@@ -1,3 +1,4 @@
+"use client";
 import { motion, Variants } from "framer-motion";
 import styles from "./ProjectDescriptionDialog.module.scss";
 
