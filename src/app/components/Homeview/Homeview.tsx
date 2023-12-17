@@ -14,19 +14,22 @@ const mainViewVariants: Variants = {
 export default function Homeview() {
   return (
     <main className={styles.homeview}>
-      <div className={styles["homeview__trapezoid"]} />
-      <motion.div
-        variants={mainViewVariants}
-        initial="hidden"
-        animate="visible"
-        className={styles["homeview__container"]}
-      >
-        <motion.h1>Fundacja Horyzonty</motion.h1>
-        <motion.h2>Vivere est cogitare</motion.h2>
-        <motion.a href="#o-nas" className={styles["homeview__cta-btn"]}>
-          Poznaj nasza misję
-        </motion.a>
-      </motion.div>
+      <div className={styles["homeview__trapezoid"]}>
+        <div className={styles["homeview__wrapper"]}>
+          <motion.div
+            variants={mainViewVariants}
+            initial="hidden"
+            animate="visible"
+            className={styles["homeview__container"]}
+          >
+            <motion.h1>Fundacja Horyzonty</motion.h1>
+            <motion.h2>Vivere est cogitare</motion.h2>
+            <motion.a href="#o-nas" className={styles["homeview__cta-btn"]}>
+              Poznaj nasza misję
+            </motion.a>
+          </motion.div>
+        </div>
+      </div>
     </main>
   );
 }
