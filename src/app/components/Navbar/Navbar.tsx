@@ -11,7 +11,6 @@ export default function Navbar() {
   const [scrollClass, setScrollClass] = useState<string>("");
   const [isSmallMenuOpen, setSmallMenuOpen] = useState<boolean>(false);
   const { scrollY } = useScroll();
-  let scrollNavClass = "";
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrollValue(latest);

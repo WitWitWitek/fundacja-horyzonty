@@ -4,11 +4,21 @@
   color: $white;
   &__icon {
     color: $primary-gold;
-    font-size: 3.5rem;
+    font-size: 7rem;
+    background: radial-gradient(
+      rgba($primary-gold, 0.12) 1%,
+      transparent 60%,
+      transparent 100%
+    );
+    background-position: top center;
   }
 
   &__title {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
     &-btn {
       transition: transform 0.3s ease-in-out;
       border: none;
@@ -16,6 +26,9 @@
       background-color: transparent;
       cursor: pointer;
       outline: none;
+      svg {
+        margin-top: 0.3rem;
+      }
     }
 
     &:hover,
@@ -30,7 +43,7 @@
 @include xs {
   .project-tile {
     &__icon {
-      font-size: 4rem;
+      font-size: 8rem;
     }
 
     &__title {
@@ -58,13 +71,15 @@
 
 @include md {
   .project-tile {
+    flex-grow: 1;
     &__icon {
-      font-size: 4.5rem;
+      font-size: 8.5rem;
     }
 
     &__title {
       cursor: pointer;
       font-size: 1.3rem;
+      gap: 0.5rem;
       &-btn {
         font-size: 1.3rem;
         transition: transform 0.3s ease-in-out;
