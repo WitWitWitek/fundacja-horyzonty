@@ -44,10 +44,13 @@ export default function FounderTwo() {
           href="https://pl.wikipedia.org/wiki/Waldemar_Tevnell"
           className={styles["founders__link"]}
         >
-          Notatka na Wikipedii{" "}
-          <span>
-            <FaWikipediaW />
-          </span>
+          Przeczytaj więcej:{" "}
+          <img
+            className={styles["founders__link-img"]}
+            src="/wikipedia-logo.svg"
+            loading="lazy"
+            alt="logo portalu Wikipedia"
+          />
         </Link>
       </div>
     </motion.section>

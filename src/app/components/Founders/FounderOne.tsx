@@ -48,10 +48,13 @@ export default function FounderOne() {
           href="https://pl.wikipedia.org/wiki/Wojciech_Wr%C3%B3blewski_(dyplomata)"
           className={styles["founders__link"]}
         >
-          Notatka na Wikipedii{" "}
-          <span>
-            <FaWikipediaW />
-          </span>
+          Przeczytaj więcej:{" "}
+          <img
+            className={styles["founders__link-img"]}
+            src="/wikipedia-logo.svg"
+            loading="lazy"
+            alt="logo portalu Wikipedia"
+          />
         </Link>
       </div>
     </motion.section>
