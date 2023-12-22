@@ -17,6 +17,8 @@ body {
   @include md {
     font-size: 20px;
   }
+  background-color: $white;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

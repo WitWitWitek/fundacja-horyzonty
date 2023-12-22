@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "./Projects.module.scss";
 import { FaChartLine, FaRegHandshake, FaGraduationCap } from "react-icons/fa6";
 import ProjectTile from "../ui/ProjectTile";
+import Waves from "../Waves/Waves";
 
 export default function Projects() {
   return (
@@ -47,6 +48,7 @@ export default function Projects() {
         wspólnocie jesteśmy w stanie rozwinąć myśl, która jest podstawą naszych
         czynów.
       </p>
+      <Waves type="white" />
     </motion.section>
   );
 }

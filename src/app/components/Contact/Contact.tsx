@@ -1,5 +1,6 @@
 "use client";
 
+import Waves from "../Waves/Waves";
 import styles from "./Contact.module.scss";
 import { motion } from "framer-motion";
 
@@ -13,6 +14,7 @@ export default function Contact() {
           <address>biuro@fundacjahoryzonty.pl</address>
         </a>
       </div>
+      <Waves type="blue" />
     </motion.section>
   );
 }

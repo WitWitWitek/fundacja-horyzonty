@@ -1,6 +1,6 @@
 "use client";
 
-import Navlink from "../ui/Navlink";
+import Waves from "../Waves/Waves";
 import styles from "./Footer.module.scss";
 
 export default function Footer() {
@@ -26,6 +26,7 @@ export default function Footer() {
           <address>biuro@fundacjahoryzonty.pl</address>
         </a>
       </div>
+      <Waves type="footer" isBottom />
     </footer>
   );
 }

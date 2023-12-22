@@ -12,6 +12,7 @@
   display: grid;
   justify-items: center;
   gap: $gap;
+  position: relative;
 
   &__description {
     @include paragraph;

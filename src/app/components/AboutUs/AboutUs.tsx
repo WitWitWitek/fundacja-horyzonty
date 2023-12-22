@@ -1,5 +1,6 @@
 "use client";
 
+import Waves from "../Waves/Waves";
 import styles from "./AboutUs.module.scss";
 import { motion, Variants } from "framer-motion";
 
@@ -50,6 +51,7 @@ export default function AboutUs() {
           innowacyjnych rozwiązań i inspirujących dyskusji.
         </p>
       </div>
+      <Waves type="white" isBottom />
     </motion.section>
   );
 }

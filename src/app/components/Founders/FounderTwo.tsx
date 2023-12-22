@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "./Founder.module.scss";
 import Link from "next/link";
-import { FaWikipediaW } from "react-icons/fa6";
+import Waves from "../Waves/Waves";
 
 export default function FounderTwo() {
   return (
@@ -53,6 +53,7 @@ export default function FounderTwo() {
           />
         </Link>
       </div>
+      <Waves type="white" />
     </motion.section>
   );
 }
